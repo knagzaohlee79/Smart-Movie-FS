@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_discover"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_gray"
+        android:title="@string/discover"/>
+    <item
+        android:id="@+id/nav_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"/>
+
+    <item
+        android:id="@+id/nav_genres"
+        android:enabled="true"
+        android:icon="@drawable/ic_genre_gray"
+        android:title="@string/genres"/>
+
+
+
+</menu>

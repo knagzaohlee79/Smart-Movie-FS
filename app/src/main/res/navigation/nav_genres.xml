@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_genres"
+    app:startDestination="@id/movieGenresFragment">
+
+    <fragment
+        android:id="@+id/movieGenresFragment"
+        android:name="com.example.smartmoviemock.ui.fragment.genre.MovieGenresFragment"
+        android:label="fragment_movie_genres"
+        tools:layout="@layout/fragment_movie_genres" >
+        <action
+            android:id="@+id/action_movieGenresFragment_to_moviesByGenreFragment"
+            app:destination="@id/moviesByGenreFragment"
+            app:popUpTo="@id/movieGenresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesByGenreFragment"
+        android:name="com.example.smartmoviemock.ui.fragment.genre.MoviesByGenreFragment"
+        android:label="fragment_movies_by_genre"
+        tools:layout="@layout/fragment_movies_by_genre" >
+        <action
+            android:id="@+id/action_moviesByGenreFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment4"
+            app:popUpTo="@id/moviesByGenreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment4"
+        android:name="com.example.smartmoviemock.ui.fragment.detail.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" />
+</navigation>

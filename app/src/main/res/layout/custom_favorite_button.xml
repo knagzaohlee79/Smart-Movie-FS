@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/ic_star_border"
+    android:id="@+id/button_star"
+    android:orientation="horizontal"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="3"
+    android:padding="5dp"/>
